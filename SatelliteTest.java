@@ -32,5 +32,15 @@ public class SatelliteTest {
         assertEquals(0, dir.z);
         assertEquals("N", dir.direction);
     }
+    @Test
+    public void testTurnLeft() {
+        Directory dir = new Directory(0, 0, 0, "N");
+        dir.left();
+
+        assertEquals(0, dir.x);
+        assertEquals(0, dir.y);
+        assertEquals(0, dir.z);
+        assertEquals("W", dir.direction);
+    }
 
 }

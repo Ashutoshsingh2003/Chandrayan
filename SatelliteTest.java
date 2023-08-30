@@ -53,4 +53,17 @@ public class SatelliteTest {
         assertEquals("E", dir.direction);
     }
 
+    @Test
+    public void testTurnUp() {
+        Directory dir = new Directory(0, 0, 0, "N");
+        dir.turningupside();
+
+        assertEquals(0, dir.x);
+        assertEquals(0, dir.y);
+        assertEquals(0, dir.z);
+        assertEquals("Up", dir.direction);
+    }
+
+    
+
 }

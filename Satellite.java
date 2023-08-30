@@ -64,6 +64,14 @@ class Directory {
             direction = "N";
         }
     }
+     public void turningupside() {
+        if (direction.equals("N") || direction.equals("E")) {
+            direction = "Up";
+        } else if (direction.equals("S") || direction.equals("W")) {
+            direction = "Down";
+        }
+    }
+
 
 
 

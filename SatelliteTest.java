@@ -22,5 +22,15 @@ public class SatelliteTest {
         assertEquals(0, dir.z);
         assertEquals("N", dir.direction);
     }
+    @Test
+    public void testMoveBackward() {
+        Directory dir = new Directory(0, 0, 0, "N");
+        dir.backward();
+
+        assertEquals(0, dir.x);
+        assertEquals(-1, dir.y);
+        assertEquals(0, dir.z);
+        assertEquals("N", dir.direction);
+    }
 
 }

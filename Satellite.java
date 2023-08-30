@@ -88,6 +88,40 @@ public class Satellite {
     public static void main(String[] args) {
         int[] startingPosition = {0,0,0};
         String startingDirection = "N";
+        String[] commands = {"f", "r", "u", "b", "l"};
+
         Directory dir = new Directory(startingPosition[0] , startingPosition[1], startingPosition[2] , startingDirection);
+        for (String command : commands) {
+            switch (command) {
+                case "f":
+                    dir.forward();
+                    break;
+                case "b":
+                    dir.backward();
+                    break;
+                case "l":
+                    dir.left();
+                    break;
+                case "r":
+                    dir.right();
+                    break;
+                case "u":
+                    dir.turningupside();
+                    break;
+                case "d":
+                    dir.turningdownside();
+                    break;
+            }
+        }
+        int lastX = dir.x;
+        int lastY = dir.y;
+        int lastZ = dir.z;
+        String lastDirection = dir.direction;
+
+        System.out.println("Last Position: (" + lastX + ", " + lastY + ", " + lastZ + ")");
+        System.out.println("Last Direction: " + lastDirection);
+
+
+
     }
 }

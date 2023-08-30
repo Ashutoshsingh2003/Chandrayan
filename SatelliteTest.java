@@ -92,8 +92,6 @@ public class SatelliteTest {
         assertEquals(0, dir.y);
         assertEquals(0, dir.z);
         assertEquals("Down", dir.direction);
-    }
-   
-    
+    } 
 
 }

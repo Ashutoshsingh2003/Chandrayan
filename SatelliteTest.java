@@ -73,6 +73,16 @@ public class SatelliteTest {
         assertEquals(0, dir.z);
         assertEquals("Up", dir.direction);
     }
+    @Test
+    public void testTurnDown() {
+        Directory dir = new Directory(0, 0, 0, "N");
+        dir.turningdownside();
+
+        assertEquals(0, dir.x);
+        assertEquals(0, dir.y);
+        assertEquals(0, dir.z);
+        assertEquals("Down", dir.direction);
+    }
 
     
 

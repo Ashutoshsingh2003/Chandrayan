@@ -53,6 +53,18 @@ class Directory {
             direction = "S";
         }
     }
+     public void right() {
+        if (direction.equals("N")) {
+            direction = "E";
+        } else if (direction.equals("S")) {
+            direction = "W";
+        } else if (direction.equals("E")) {
+            direction = "S";
+        } else if (direction.equals("W")) {
+            direction = "N";
+        }
+    }
+
 
 
 
